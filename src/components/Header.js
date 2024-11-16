@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: "tomato",
   },
   subtitle: {
-    color: "tan",
+    color: "black",
     textTransform: "uppercase",
   },
   typedContainer: {

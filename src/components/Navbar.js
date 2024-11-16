@@ -85,6 +85,8 @@ const Navbar = () => {
     </Box>
   );
 
+
+
   return (
     <React.Fragment>
       <Box component="nav">
@@ -92,10 +94,11 @@ const Navbar = () => {
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
               <ArrowBack className={classes.arrow} />
-            </IconButton>
+            
             <Typography variant="h5" className={classes.title}>
-              Nav
+              o.O Look, an Arrow! Click it :}
             </Typography>
+            </IconButton>
           </Toolbar>
         </AppBar>
       </Box>

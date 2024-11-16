@@ -2,234 +2,112 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import dancer from "../dancer.jpg"
+import stu_become_teach from "../images/stu-become-teach.png"
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
+    padding: "2rem",
+    alignItems: "center",
   },
-  timeLine: {
-    position: "relative",
-    padding: "1rem",
-    margin: "o auto",
-    "&:before": {
-      content: "''",
-      position: "absolute",
-      height: "100%",
-      border: "1px solid tan",
-      right: "40px",
-      top: 0,
+  section: {
+    display: "flex",
+    alignItems: "center",
+    padding: "2rem 4rem",
+    /*
+    "&:nth-of-type(odd)": {
+      flexDirection: "row",
     },
-    "&:after": {
-      content: "''",
-      display: "table",
-      clear: "both",
-    },
-    [theme.breakpoints.up("md")]: {
-      padding: "2rem",
-      "&:before": {
-        left: "calc(50% - 1px)",
-        right: "auto",
-      },
-    },
+    "&:nth-of-type(even)": {
+      flexDirection: "row-reverse",
+    },*/
   },
-  timeLineItem: {
-    padding: "1rem",
-    borderBottom: "2px solid tan",
-    position: "relative",
-    margin: "1rem 3rem 1rem 1rem",
-    clear: "both",
-    "&:after": {
-      content: "''",
-      position: "absolute",
-    },
-    "&:before": {
-      content: "''",
-      position: "absolute",
-      right: "-0.625rem",
-      top: "calc(50% - 5px)",
-      borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
-      borderWidth: "0.625rem",
-      transform: "rotate(45deg)",
-    },
-    [theme.breakpoints.up("md")]: {
-      width: "44%",
-      margin: "1rem",
-      "&:nth-of-type(2n)": {
-        float: "right",
-        margin: "1rem",
-        borderColor: "tan",
-      },
-      "&:nth-of-type(2n):before": {
-        right: "auto",
-        left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
-      },
-    },
+  image: {
+    width: "40%",
+    height: "auto",
+    borderRadius: "8px",
+    margin: "0 2rem",
   },
-  timeLineYear: {
-    textAlign: "center",
-    maxWidth: "9.375rem",
-    margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
-    color: "#fff",
-    background: "tomato",
-    lineHeight: 1,
-    padding: "0.5rem 1rem",
-    "&:before": {
-      display: "none",
-    },
-    [theme.breakpoints.up("md")]: {
-      textAlign: "center",
-      margin: "0 auto",
-      "&:nth-of-type(2n)": {
-        float: "none",
-        margin: "0 auto",
-      },
-      "&:nth-of-type(2n):before": {
-        display: "none",
-      },
-    },
+  textContainer: {
+    width: "60%",
   },
   heading: {
     color: "tomato",
-    padding: "3rem 0",
-    textTransform: "uppercase",
+    paddingBottom: "1rem",
   },
-  subHeading: {
-    color: "#fff",
-    padding: 0,
-    textTransform: "uppercase",
-  },
-  body1: {
-    color: "tomato",
-  },
-  subtitle1: {
+  body: {
     color: "tan",
   },
 }));
 
 const About = () => {
   const classes = useStyles();
+
   return (
-    <Box component="header" className={classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
-      </Typography>
-      <Box component="div" className={classes.timeLine}>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2013
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            web design
+    <Box component="div" className={classes.mainContainer}>
+      {/* Section 1: Image on Left, Text on Right */}
+      <Box className={classes.section}>
+        <img src={stu_become_teach} alt="Description 1" className={classes.image} />
+        <Box className={classes.textContainer}>
+          <Typography variant="h4" className={classes.heading}>
+            Education
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2014
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            html & css
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2015
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Fullstack Javascript
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Django & React
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+          <Typography variant="body1" className={classes.body}>
+            Education comes from everywhere, list my personal teachers as well as formal education
           </Typography>
         </Box>
       </Box>
+
+      {/* Section 2: Image on Right, Text on Left */}
+      <Box className={classes.section}>
+        <Box className={classes.textContainer}>
+          <Typography variant="h4" className={classes.heading}>
+            Community
+          </Typography>
+          <Typography variant="body1" className={classes.body}>
+            community is cool and stuff, we cannot survive alone
+          </Typography>
+        </Box>
+        <img src={dancer} alt="Description 1" className={classes.image} />   
+      </Box>
+
+      <Box className={classes.section}>
+      <img src={dancer} alt="Description 1" className={classes.image} />   
+        <Box className={classes.textContainer}>
+          <Typography variant="h4" className={classes.heading}>
+            Access to Tools and Technology
+          </Typography>
+          <Typography variant="body1" className={classes.body}>
+            how and why I help people get acess to tools, knowledge and technology
+          </Typography>
+        </Box>
+      </Box>
+
+      <Box className={classes.section}>
+        <Box className={classes.textContainer}>
+          <Typography variant="h4" className={classes.heading}>
+            Art and Expression
+          </Typography>
+          <Typography variant="body1" className={classes.body}>
+            Art is very fun and cool and healthy and healing and we should all do more of it
+          </Typography>
+        </Box>
+        <img src={dancer} alt="Description 1" className={classes.image} />   
+      </Box>
+      <Box className={classes.section}>
+
+      <img src={dancer} alt="Description 1" className={classes.image} />   
+        <Box className={classes.textContainer}>
+          <Typography variant="h4" className={classes.heading}>
+            Environment
+          </Typography>
+          <Typography variant="body1" className={classes.body}> 
+            Passionate about finding solutions to climate change problems
+          </Typography>
+        </Box>
+      </Box>
+      {/* Additional sections can be added below following the same pattern */}
     </Box>
   );
 };

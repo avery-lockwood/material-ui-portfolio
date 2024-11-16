@@ -12,8 +12,8 @@ import Typography from "@material-ui/core/Typography";
 
 import project1 from "../images/opendet.jpg";
 import project2 from "../images/VaporDeposition.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
+import Rotoforge from "../images/RotoForge.jpg";
+import ERV from "../images/ERV.png";
 import project5 from "../images/react-redux.jpg";
 import project6 from "../images/react.png";
 
@@ -36,6 +36,7 @@ const projects = [
     eligendi, magnam est aliquam recusandae? Magnam soluta minus
     iste alias sunt veritatis nisi dolores!`,
     image: project1,
+    url: "https://github.com/avery-lockwood/OpenDetonationSpray"
   },
   {
     name: "Sodium Sulphur R&D",
@@ -47,22 +48,20 @@ const projects = [
   },
   {
     name: "Rotoforge Contributions",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project3,
+    description: `currently testing the orbital friction welding concept for rotoforge, a 
+    project aiming to develop an open source metal 3d printer`,
+    image: Rotoforge,
+    url: "https://github.com/Sindry-Manufacturing/rotoforge",
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project4,
+    name: "Erv Forge build",
+    description: ` somethings about tooling up a moving shop
+    `,
+    image: ERV,
+    url: "https://www.thecrucible.org/erv-2022/",
   },
   {
-    name: "Project 5",
+    name: "My Workshop",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
@@ -105,11 +104,8 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
+                <Button size="small" color="primary"  onClick={() => window.open(project.url, "_blank")}>
+                  Learn More
                 </Button>
               </CardActions>
             </Card>
