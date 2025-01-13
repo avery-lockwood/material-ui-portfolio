@@ -54,7 +54,11 @@ const About = () => {
             Education
           </Typography>
           <Typography variant="body1" className={classes.body}>
-            Education comes from everywhere, list my personal teachers as well as formal education
+            Education comes from everywhere, some of the ways I've found the amazing teachers I have is
+            through showing up at makerspaces like the sudo room, and learning from other instructors at
+            the crucible. A few particularly influential teachers of mine are <a href="https://akjsdakjshd">Cleste Flores</a> who 
+            taught me almost everything I know about blacksmithing. <a href='kadkjs'>Ian Wrenk</a> who taught be manual and cnc machining.
+            and many more people who share their passions at every opportunity.
           </Typography>
         </Box>
       </Box>
