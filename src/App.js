@@ -5,7 +5,7 @@ import Home from "./components";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+//import Contact from "./components/Contact";
 
 import "./App.css";
 
@@ -18,10 +18,11 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
+      
       </Switch>
     </React.Fragment>
   );
 }
 
 export default App;
+// // <Route exact path="/contact" component={Contact} />

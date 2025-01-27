@@ -3,8 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Instagram from "@material-ui/icons/Instagram";
-import GitHub from "@material-ui/icons/GitHub"
-import YouTube from "@material-ui/icons/YouTube"
+import GitHub from "@material-ui/icons/GitHub";
+import YouTube from "@material-ui/icons/YouTube";
+import Email from "@material-ui/icons/Email";
 import { Link } from 'react-router-dom';
 
 
@@ -35,8 +36,8 @@ const Footer = () => {
         <BottomNavigationAction icon={<GitHub/>} className={classes.root} />
       </a>  
 
-      <a href="https://www.instagram.com/a.very.very.very.very.very/">
-      <BottomNavigationAction icon={<Instagram/>} className={classes.root} />
+      <a href="mailto:avery.lockwood9@gmail.com">
+      <BottomNavigationAction icon={<Email/>} className={classes.root} />
       </a>
 
       <a href="https://www.youtube.com/@a.very.lockwood">

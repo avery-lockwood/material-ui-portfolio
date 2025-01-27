@@ -4,10 +4,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import dancer from "../dancer.jpg"
 import stu_become_teach from "../images/stu-become-teach.png"
-
+import averyandcera from "../images/ave&cera.JPG"
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#060804",
     padding: "2rem",
     alignItems: "center",
   },
@@ -70,10 +70,17 @@ const About = () => {
             Community
           </Typography>
           <Typography variant="body1" className={classes.body}>
-            community is cool and stuff, we cannot survive alone
+            Makerspaces are some of the most important places to learn, grow and build. I am involved in a many as posseble
+            to expand my skills, network, and teach.
+             <a href="https://sudoroom.org/">The Sudo Room</a> 
+            , <a href="https://www.noisebridge.net/wiki/Noisebridge">Noisebridge</a>, <a href="https://www.thecrucible.org/">The Crucible</a>, 
+            and <a href="https://www.clayandsteel.com/">Clay and Steel</a> are my current 
+            makerspaces of choice since I can see that they are doing their best to make tools and skills acessable to as many 
+            people as they can. these spaces all also do their best to create a welcoming Environment for people of all
+            backgrounds, identities, and classes. 
           </Typography>
         </Box>
-        <img src={dancer} alt="Description 1" className={classes.image} />   
+        <img src={averyandcera} alt="Description 1" className={classes.image} />   
       </Box>
 
       <Box className={classes.section}>
@@ -83,7 +90,11 @@ const About = () => {
             Access to Tools and Technology
           </Typography>
           <Typography variant="body1" className={classes.body}>
-            how and why I help people get acess to tools, knowledge and technology
+            Access to tools, technology, and ways to grow is becoming increaginly important in our world where jobs are rapidly
+             automated. A lot of people will need to change careers fast in order to keep up with the rapidly changing world.
+             Keeping places like community colleges, makerspaces, tool libraries, and job training centers acessable is critical 
+             for keeping up.
+
           </Typography>
         </Box>
       </Box>

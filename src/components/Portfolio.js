@@ -4,22 +4,20 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
 import project1 from "../images/opendet.jpg";
 import project2 from "../images/VaporDeposition.jpg";
 import Rotoforge from "../images/rotoforge-1.png";
 import ERV from "../images/ERV.png";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import Workshop from "../images/shed.jpg";
+
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#060804",
     height: "100%",
   },
   cardContainer: {
@@ -42,19 +40,19 @@ const projects = [
   {
     //add link to paper i am basing my work off of
     name: "Lithium Sulphur Battery Chemistry & soft-vacuum pvd",
-    description: `After seeing a reserch paper using carbon nanotubes to stabalize monoclinic gamma sulfir
+    description: `After reading a research paper about carbon nanotubes to stabalize monoclinic gamma sulfir
     in lithium sulfur batteries to yeild much higher lifetime that other techniques. I wanted to try using 
     vertically aligned graphene sheets as a cheaper alternative to the graphines used in the paper.
-     I built my own soft-vacuum pvd system to vapor deposit the sulfur and am currently working with others 
-     (luke) to assemble some test cells.`,
+     I built my own soft-vacuum pvd system to vapor deposit the sulfur and am currently looking for a 
+     lab to assemble and test cells with.`,
     image: project2,
+    url: "https://github.com/avery-lockwood/Soft-Vaccum-Pvd"
   },
   {
     name: "Rotoforge Contributions",
     description: `
     I am now working with sindry manufacturing to develop an affordable, small scale friction surfacing based metal 3d printer
-    The current prototype I am working on is an orbital fricttion welding system. I designed a simple, but strong 
-    `,
+    The current prototype I am working on is an orbital fricttion welding system. I designed a simple, but strong `,
     image: Rotoforge,
     url: "https://github.com/Sindry-Manufacturing/rotoforge",
   },
@@ -62,16 +60,15 @@ const projects = [
     name: "Erv Forge build",
     description: `For the Crucible's ERV (Educaytional Respose Vehivcle), I designed and built a forge that is reliable, 
     efficient, and very repairable. This project included designing the forge and other equipment to be portable 
-    and repairable in the feild. 
-    `,
+    and repairable in the feild. `,
     image: ERV,
     url: "https://www.thecrucible.org/erv-2022/",
   },
   {
     name: "My Workshop",
-    description: `a small building that i bruild with my grandpa as a kid, ive been tooling up my shop
-    ever since to do everything from jewlery, simple chemistry, machining and electronics. `,
-    image: project5,
+    description: `A small building that I built with my grandpa as a kid, ive been tooling up my shop
+    ever since to do everything from jewlery, simple chemistry, machining and electronics.`,
+    image: Workshop,
   },
   /*{
     name: "Project 6",
@@ -86,11 +83,13 @@ const projects = [
 const Portfolio = () => {
   const classes = useStyles();
   return (
+    
     <Box component="div" className={classes.mainContainer}>
       <Grid container justify="center">
         {/* Projects */}
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
+            <a href={project.url} key={i} style={{textDecoration: "none", color: "#000"}}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -108,14 +107,11 @@ const Portfolio = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary"  onClick={() => window.open(project.url, "_blank")}>
-                  Learn More
-                </Button>
-              </CardActions>
-            </Card>
+      
+            </Card> 
+            </a>
           </Grid>
-        ))}
+        ))} 
       </Grid>
     </Box>
   );
