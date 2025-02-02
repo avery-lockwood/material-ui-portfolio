@@ -2,11 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Instagram from "@material-ui/icons/Instagram";
 import GitHub from "@material-ui/icons/GitHub";
 import YouTube from "@material-ui/icons/YouTube";
 import Email from "@material-ui/icons/Email";
-import { Link } from 'react-router-dom';
 
 
 
