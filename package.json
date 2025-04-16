@@ -12,13 +12,15 @@
     "i": "^0.3.6",
     "nodemailer": "^6.9.16",
     "npm": "^6.14.5",
+    "pm2": "^5.4.3",
     "portfolio": "file:",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-typed": "^1.2.0"
+    "react-scripts": "^5.0.1",
+    "react-typed": "^1.2.0",
+    "webpack": "^5.97.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",

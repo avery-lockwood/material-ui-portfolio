@@ -26,6 +26,10 @@ const articles = [
     description: `I am a transgender tradeswoman and engineering student. I have been working in the trades and studying to become an engineer for all my adult life and here are some of my experinces. `,
     url: ""
   },
+  {name:"peter's chromebook conversion",
+    description:'here is peters chromebook conversion',
+    url:"https://docs.google.com/document/d/1ODH2rvoCop1teArmJCL-61VVr2I2KwEqNNCYeRjWMi4/edit?usp=sharing"
+  }
 ]
 
 const Infodump = () => {
