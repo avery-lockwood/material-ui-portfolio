@@ -2,7 +2,7 @@
 ## later this should be written in js but for now i'm dispensing ideas in md
 
 ## Maintaining safe, inclusinve spaces while allowing people to learn, make mistakes and grow
-<p>I find that often people will approach me with questions. I am a transgender woman and don't exactly look like a cisgender woman or man, so people ask things. I want to give people the room to mess up and the time to learn to better understand what gender is, why it matters and what I am, but it gets exhausting and sometimes the questions get a little.... inapropriate.</p>
+
 
 #### List of questions I have been asked that i am ok with
 - Is a trans woman male to female or female to male
@@ -33,7 +33,22 @@ I found that on job applications, if I clairified that I had a preferred name th
 
 One of the hardest and most important aspects of my transition for me is voice training. Feminizing hormone therapy does not affect vocal chords so we have to train them. This means that I can do a strong deep male voice, or a light resonand feminine voice. When I use a depper voice, even though my words are the same, I am repected for my knowledge. If I use a higher voice, men tend to disregard what I have to say despite in many cases me having more experience.
 
-###
+I find that often people will approach me with questions. I am a transgender woman and don't exactly look like a cisgender woman or man, so people ask things. I want to give people the room to mess up and the time to learn to better understand what gender is, why it matters and what I am, but it gets exhausting and sometimes the questions get a little.... inapropriate.
+
+#### List of questions I have been asked that i am ok with
+- Is a trans woman male to female or female to male
+- What are your pronouns?
+- Do you want to be refered to as a man or woman?
+
+#### List of questions that I have not been okay with
+- If I wanted to have a baby with you would you want to wear the bump for 9 months
+- Do trans women like agressive men
+- What are you, biologically
+- Why are trans people depressed?
+
+There is asking a question and then there is harassment. I want to give people room to learn but its more important to protect marginalized people than it is to give non-marginalized people room to make mistakes. 
+
+
 
 ## Confronting biases through creative expression
 

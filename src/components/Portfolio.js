@@ -20,6 +20,19 @@ const useStyles = makeStyles((theme) => ({
     background: "#060804",
     height: "100%",
   },
+  titleBox: {
+    //backgroundColor: "white",
+    padding: theme.spacing(1),
+    marginBottom: theme.spacing(4),
+    textAlign: "center",
+    width: "fit-content", // Key for dynamic width
+    maxWidth: "100%", // Prevent overflow on small screens
+    margin: "0 auto",
+    borderRadius: 20, // Adjust the radius for desired roundness
+  },
+  titleText: {
+    color: "white", // Set title text color
+  },
   cardContainer: {
     maxWidth: 345,
     margin: "3rem auto",
@@ -85,12 +98,18 @@ const Portfolio = () => {
   return (
     
     <Box component="div" className={classes.mainContainer}>
+        <Box className={classes.titleBox}>
+            <Typography variant="h3" className={classes.titleText}>
+            <span>✨</span> Here's what i've been working on :) <span>✨</span>
+            </Typography>
+          </Box>
       <Grid container justify="center">
+         
         {/* Projects */}
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
-            <a href={project.url} key={i} style={{textDecoration: "none", color: "#000"}}>
             <Card className={classes.cardContainer}>
+            <a href={project.url} key={i} style={{textDecoration: "none", color: "#000"}}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -107,9 +126,9 @@ const Portfolio = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-      
+              </a>
             </Card> 
-            </a>
+           
           </Grid>
         ))} 
       </Grid>

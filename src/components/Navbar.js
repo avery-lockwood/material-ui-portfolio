@@ -53,7 +53,7 @@ const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
   { listIcon: <AssignmentInd />, listText: "About", listPath: "/about" },
   { listIcon: <Apps />, listText: "Potrfolio", listPath: "/portfolio" },
-  { listIcon: <Book />, listText: "Blog", listPath: "/Blog" },
+  { listIcon: <Book />, listText: "Infodump", listPath: "/infodump" },
 ];
 
 const Navbar = () => {
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+      <Avatar className={classes.avatar} src={avatar} alt="Avery Lockwood" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (

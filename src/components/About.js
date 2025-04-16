@@ -95,34 +95,12 @@ const About = () => {
              Keeping places like community colleges, makerspaces, tool libraries, and job training centers acessable is critical 
              for keeping up.
 
-          </Typography>
-        </Box>
-      </Box>
+             I am currrently working to improve infrastructure at the sudo room, and develop curriculum
+             for design for manufacturing workshops that are accessable to low income individuals. 
 
-      <Box className={classes.section}>
-        <Box className={classes.textContainer}>
-          <Typography variant="h4" className={classes.heading}>
-            Art and Expression
-          </Typography>
-          <Typography variant="body1" className={classes.body}>
-            Art is very fun and cool and healthy and healing and we should all do more of it
-          </Typography>
-        </Box>
-        <img src={dancer} alt="Description 1" className={classes.image} />   
-      </Box>
-      <Box className={classes.section}>
-
-      <img src={dancer} alt="Description 1" className={classes.image} />   
-        <Box className={classes.textContainer}>
-          <Typography variant="h4" className={classes.heading}>
-            Environment
-          </Typography>
-          <Typography variant="body1" className={classes.body}> 
-            Passionate about finding solutions to climate change problems
           </Typography>
         </Box>
       </Box>
-      {/* Additional sections can be added below following the same pattern */}
     </Box>
   );
 };
