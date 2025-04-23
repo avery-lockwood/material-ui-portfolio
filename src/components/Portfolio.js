@@ -17,7 +17,7 @@ import Workshop from "../images/shed.jpg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#060804",
+    background: "#1a2036",
     height: "100%",
   },
   titleBox: {
@@ -100,7 +100,7 @@ const Portfolio = () => {
     <Box component="div" className={classes.mainContainer}>
         <Box className={classes.titleBox}>
             <Typography variant="h3" className={classes.titleText}>
-            <span>✨</span> Here's what i've been working on :) <span>✨</span>
+            <span>✨</span> Here's what i've been working on (^> <span>✨</span>
             </Typography>
           </Box>
       <Grid container justify="center">

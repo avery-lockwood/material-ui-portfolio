@@ -2,12 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import dancer from "../dancer.jpg"
 import stu_become_teach from "../images/stu-become-teach.png"
 import averyandcera from "../images/ave&cera.JPG"
+import milling from "../images/milling.jpg"
+
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#060804",
+    background: "#000",
     padding: "2rem",
     alignItems: "center",
   },
@@ -84,7 +85,7 @@ const About = () => {
       </Box>
 
       <Box className={classes.section}>
-      <img src={dancer} alt="Description 1" className={classes.image} />   
+      <img src={milling} alt="Description 1" className={classes.image} />   
         <Box className={classes.textContainer}>
           <Typography variant="h4" className={classes.heading}>
             Access to Tools and Technology

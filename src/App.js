@@ -6,7 +6,6 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import infodump from './components/infodump';
-import article1 from './components/InfoDump/Article1'
 //import Contact from "./components/Contact";
 
 import "./App.css";
@@ -21,7 +20,6 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path = "/infodump" component={infodump} />
-        <Route exact path = "/infodump/article1" component={article1} />
       </Switch>
     </React.Fragment>
   );
