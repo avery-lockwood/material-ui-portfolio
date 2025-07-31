@@ -74,7 +74,7 @@ const About = () => {
             Makerspaces are some of the most important places to learn, grow and build. I am involved in a many as posseble
             to expand my skills, network, and teach.
              <a href="https://sudoroom.org/">The Sudo Room</a> 
-            , <a href="https://www.noisebridge.net/wiki/Noisebridge">Noisebridge</a>, <a href="https://www.thecrucible.org/">The Crucible</a>, 
+            , <a href="https://www.noisebridge.net/wiki/Noisebridge">Noisebridge</a>,  
             and <a href="https://www.clayandsteel.com/">Clay and Steel</a> are my current 
             makerspaces of choice since I can see that they are doing their best to make tools and skills acessable to as many 
             people as they can. these spaces all also do their best to create a welcoming Environment for people of all

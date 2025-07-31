@@ -17,7 +17,7 @@ import Workshop from "../images/shed.jpg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#1a2036",
+    background: "#000",
     height: "100%",
   },
   titleBox: {

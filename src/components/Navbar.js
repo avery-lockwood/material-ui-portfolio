@@ -53,7 +53,7 @@ const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/" },
   { listIcon: <AssignmentInd />, listText: "About", listPath: "/about" },
   { listIcon: <Apps />, listText: "Potrfolio", listPath: "/portfolio" },
-  { listIcon: <Book />, listText: "Infodump", listPath: "/infodump" },
+  //{ listIcon: <Book />, listText: "Infodump", listPath: "/infodump" },
 ];
 
 const Navbar = () => {
