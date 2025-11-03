@@ -9,36 +9,54 @@ import milling from "../images/milling.jpg"
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#000",
-    padding: "2rem",
+    padding: "0",
     alignItems: "center",
   },
   section: {
     display: "flex",
     alignItems: "center",
     padding: "2rem 4rem",
-    /*
-    "&:nth-of-type(odd)": {
-      flexDirection: "row",
+    flexDirection: "row",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      padding: "1rem",
+      textAlign: "left",
     },
-    "&:nth-of-type(even)": {
-      flexDirection: "row-reverse",
-    },*/
   },
   image: {
     width: "40%",
     height: "auto",
     borderRadius: "8px",
     margin: "0 2rem",
+    display: "block",
+    maxWidth: "100%",
+    objectFit: "cover",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      margin: "0 0 1rem 0",
+    },
   },
   textContainer: {
     width: "60%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   },
   heading: {
     color: "tomato",
     paddingBottom: "1rem",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.6rem",
+    },
   },
   body: {
     color: "tan",
+    "& a": {
+      color: "#90caf9",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "0.95rem",
+    },
   },
 }));
 
