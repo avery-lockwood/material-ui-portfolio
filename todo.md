@@ -1,7 +1,8 @@
 # To Do
-- update link to email
-- make image to crucible article about education in src\components\About.js
-- dig through images from nimble
+fix image zooming
+also fix serve issue with netlify
+
+
 
 ## Ideas
 

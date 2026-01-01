@@ -13,7 +13,8 @@ import project2 from "../images/VaporDeposition.jpg";
 import Rotoforge from "../images/rotoforge-1.png";
 import ERV from "../images/ERV.png";
 import Workshop from "../images/shed.jpg";
-
+import sputter from "../images/sputter.jpg";
+import measuring from "../images/measuring.jpg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -83,14 +84,19 @@ const projects = [
     ever since to do everything from jewlery, simple chemistry, machining and electronics.`,
     image: Workshop,
   },
-  /*{
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project6,
-  },*/
+  {
+    name: "Simple Sputter Coater",
+    description: `A small, simple, manufacturable sputter coating system for lab scale coating on a budget`,
+    image: sputter,
+    url: "https://github.com/avery-lockwood/Simple-Sputter-Coater"
+
+  },
+  {
+    name: "odds and ends",
+    description: `here is some of my work that doesnt quite into a single project`,
+    image: measuring,
+    url: "/miscelaneous",
+  },
 ];
 
 const Portfolio = () => {
