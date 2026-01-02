@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "netlify-cli": "^23.13.0",
     "nodemailer": "^6.9.16",
     "pm2": "^5.4.3",
     "portfolio": "file:",
